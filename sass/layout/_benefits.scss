@@ -1,0 +1,6 @@
+.skills {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center; 
+    flex-basis: calc((100% - 90px) / 4);
+}

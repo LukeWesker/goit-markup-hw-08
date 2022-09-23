@@ -1,0 +1,16 @@
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--acent-color);
+    transition: 250ms var(--timing-animation);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--primary-white-color);
+    transition: 250ms var(--timing-animation);
+}
+.clients-block__link:hover .clients-block__icon,
+.clients-block__link:focus .clients-block__icon {
+    fill: var(--acent-color);
+    transition: 250ms var(--timing-animation);
+}
