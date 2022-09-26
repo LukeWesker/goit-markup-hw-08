@@ -103,7 +103,6 @@ html {
 }
 @media screen and (min-width: 768px) {
   .container {
-    display: flex;
     align-items: center;
     width: 738px;
   }
@@ -357,6 +356,10 @@ html {
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-align: left;
+}
+
+.mobile-menu__link.current {
+  color: var(--acent-color);
 }
 
 .logo {
@@ -926,6 +929,7 @@ html {
 .icon-clients {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 .clients-block__link {
