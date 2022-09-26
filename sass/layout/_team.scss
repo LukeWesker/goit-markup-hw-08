@@ -1,3 +1,21 @@
+@media screen and (max-width: 767px) {
+    .frame-link {
+      width: 100%;
+      gap: 30px;
+    }
+    .frame-link__img {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .working-section {
+        display: none;
+    }
+    .team-list {
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+}
 .main-team {
     background-color: var(--secondary-bg-color);   
 }
