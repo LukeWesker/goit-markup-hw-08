@@ -1210,10 +1210,30 @@ html {
   transform: translateY(0%);
 }
 
-.footer-links {
-  margin-left: 70px;
+@media screen and (max-width: 767px) {
+  .footer__navigation {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .footer-form-div {
+    margin-left: auto;
+    text-align: center;
+  }
+  .footer-links {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .box-web {
+    display: block;
+    align-items: center;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .button-foot-submit {
+    margin-top: 20px;
+  }
 }
-
 .footer__logo {
   margin-left: auto;
   padding-inline-start: 0;
@@ -1267,11 +1287,6 @@ html {
 
 .footer__link:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.box-web {
-  display: flex;
-  align-items: baseline;
 }
 
 .skills {
