@@ -19,8 +19,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 580px;
+    width: 450px;
+    height: 609px;
     background-color: var(--primary-white-color);
     border-radius: 4px;
     border: 1px rgba(0, 0, 0, 0.1);
@@ -92,9 +92,9 @@
 
 .documents {
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: left;
        color: rgba(33, 150, 243, 1);
@@ -112,9 +112,9 @@
     .registr-on {
         display: inline-block;
         font-family: Roboto;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: left;
     color: rgba(117, 117, 117, 1);
