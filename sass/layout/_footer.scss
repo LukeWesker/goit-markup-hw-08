@@ -22,7 +22,7 @@
         margin-top: 20px;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .box-web {
         display: flex;
         align-items: baseline;
@@ -47,9 +47,72 @@
         text-align: center;
     }
 }
-// .footer-links {
-//     margin-left: 70px;
-// }
+
+@media screen and (min-width: 1200px) {
+    .footer-links {
+        margin-left: 70px;
+    }
+    .footer__logo {
+        margin-left: auto;
+        padding-inline-start: 0;
+        margin-bottom: 20px;
+    }
+    .footer {
+        background: var(--primary-bg-color);
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .web-logo-foot {
+        color: var(--primary-white-color)
+    }
+    .footer-address {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);  
+        margin-left: auto;
+    
+        &:hover,
+        &:focus {
+        color: var(--acent-color);
+        transition: 250ms var(--timing-animation);
+    }
+    }
+    
+    .footer-input {
+        position: relative;
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        padding-left: 16px;
+        transition: 250ms var(--timing-animation);
+        cursor: pointer;
+        background-color: transparent;
+        color: var(--primary-white-color);
+    
+        &:checked {
+            border: none;
+        }
+    }
+    .footer-form-div {
+        margin-left: auto;
+    }
+    
+    .footer__link:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    
+    
+    .box-web {
+        display: flex;
+        align-items: baseline;
+    }  
+}
+
 .footer__logo {
     margin-left: auto;
     padding-inline-start: 0;
@@ -96,13 +159,6 @@
         border: none;
     }
 }
-
-
-
-
-// .footer-form-div {
-//     margin-left: auto;
-// }
 
 .footer__link:not(:last-child) {
     margin-bottom: 9px;

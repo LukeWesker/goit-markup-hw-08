@@ -38,7 +38,7 @@
         flex-wrap: wrap;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .skills {
         display: flex;
         column-gap: 30px;
@@ -174,4 +174,15 @@
         align-items: center;
     }
 
+}
+@media screen and (min-width: 1200px) {
+    .list-item::before {
+        width: 270px;
+    }
+    .skills {
+        display: flex;
+        column-gap: 30px;
+        justify-content: center;
+        flex-basis: calc((100% - 90px)/4);
+    }
 }
