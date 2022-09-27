@@ -48,8 +48,7 @@
     }
     .list-item {
         display: block;
-        width: 354px;
-        height: 120px;
+        width: calc((100% - 30px)/2);
     }
 }
 .list-item::before {

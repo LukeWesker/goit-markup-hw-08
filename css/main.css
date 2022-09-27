@@ -105,7 +105,7 @@ html {
 @media screen and (min-width: 768px) {
   .container {
     align-items: center;
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -913,8 +913,7 @@ html {
   }
   .list-item {
     display: block;
-    width: 354px;
-    height: 120px;
+    width: calc((100% - 30px) / 2);
   }
 }
 .list-item::before {
@@ -1175,6 +1174,17 @@ html {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+@media screen and (max-width: 767px) {
+  .button-nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+  }
+}
 .caption-portfolio {
   font-weight: 700;
   font-size: 18px;
