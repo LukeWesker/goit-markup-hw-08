@@ -32,9 +32,7 @@
     }
 }
 
-.site-address__link {
-    margin-bottom: 10px;
-}
+
 .main-header {
     text-align: center;
     background-color: var(--primary-bg-color);
@@ -153,6 +151,9 @@
         line-height: 1.14;
         letter-spacing: .02em;
         flex-direction: column;
+    }
+    .site-address__link {
+        margin-bottom: 10px;
     }
 }
 @media screen and (min-width: 768px) {

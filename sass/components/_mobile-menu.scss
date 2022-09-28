@@ -57,6 +57,7 @@
 }
 .mobile-menu__social-list {
     display: flex;
+    flex-wrap: wrap;
    gap: 10px;
 }
 .mobile-menu__social-link {

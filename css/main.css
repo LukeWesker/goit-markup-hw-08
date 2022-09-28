@@ -308,6 +308,7 @@ html {
 
 .mobile-menu__social-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -487,10 +488,50 @@ html {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 
+@media screen and (max-width: 1199px) {
+  .registr-on {
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgb(117, 117, 117);
+  }
+  .documents {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgb(33, 150, 243);
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
+  }
+  .registr-on {
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgb(117, 117, 117);
+  }
+  .documents {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgb(33, 150, 243);
   }
 }
 .backdrop.is-hidden {
@@ -559,16 +600,6 @@ html {
   fill: var(--primary-white-color);
 }
 
-.documents {
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: rgb(33, 150, 243);
-}
-
 .registr-on-position {
   display: flex;
   align-items: center;
@@ -577,17 +608,6 @@ html {
   font-weight: 400;
   line-height: 1.7;
   color: var(--secondary-text-color);
-}
-
-.registr-on {
-  display: inline-block;
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: rgb(117, 117, 117);
 }
 
 .icon-container {
@@ -733,10 +753,6 @@ html {
     display: none;
   }
 }
-.site-address__link {
-  margin-bottom: 10px;
-}
-
 .main-header {
   text-align: center;
   background-color: var(--primary-bg-color);
@@ -849,6 +865,9 @@ html {
     line-height: 1.14;
     letter-spacing: 0.02em;
     flex-direction: column;
+  }
+  .site-address__link {
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1530,7 +1549,17 @@ html {
 
 .skills {
   display: flex;
-  column-gap: 30px;
   justify-content: center;
   flex-basis: calc((100% - 90px) / 4);
+}
+
+@media screen and (max-width: 767px) {
+  .skills {
+    column-gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    gap: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

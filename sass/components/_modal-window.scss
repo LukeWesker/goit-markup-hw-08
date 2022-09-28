@@ -26,11 +26,52 @@
     border: 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
+@media screen and (max-width: 1199px) {
+    .registr-on {
+        display: inline-block;
+        font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgba(117, 117, 117, 1);
+    }
+    .documents {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-align: left;
+           color: rgba(33, 150, 243, 1);
+        }
+}
 @media screen and (min-width: 1200px) {
     .modal {
         width: 528px;
         height: 581px;
     }
+    .registr-on {
+        display: inline-block;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: rgba(117, 117, 117, 1);
+        }
+    
+        .documents {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            text-align: left;
+            color: rgba(33, 150, 243, 1);
+        }
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -95,15 +136,7 @@
    
 }
 
-.documents {
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: left;
-       color: rgba(33, 150, 243, 1);
-    }
+
     .registr-on-position {
         display: flex;
         align-items: center;
@@ -114,16 +147,8 @@
         color: var(--secondary-text-color);
     
     }
-    .registr-on {
-        display: inline-block;
-        font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: rgba(117, 117, 117, 1);
-    }
+  
+  
     .icon-container {
         position: relative;
         display: block;
