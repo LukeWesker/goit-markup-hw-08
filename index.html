@@ -18,7 +18,7 @@
     <div class="container menu">
     <div class="page-header__container">
     <nav class="page-navigation">
-        <a lang="en" href="./index.html " class="logo link"><span class="web-logo">Web</span>Studio</a>
+        <a lang="en" href="./index.html " class="logo head link"><span class="web-logo">Web</span>Studio</a>
         <ul class="menu-position">
             <li class="menu__item link-hover"><a href="./index.html" class="link current menu__header-link">Cтудія</a></li>
             <li class="menu__item link-hover"><a href="./portfolio.html" class="link">Портфоліо</a></li>
@@ -54,21 +54,15 @@
                 </svg>
             </button>
             <div class="mobile-menu__link-container">
-            <div class="mobile-menu__nav">
-            <ul>
+            <ul class="mobile-menu__nav">
                 <li class="mobile-menu__item mobile-menu__text"><a href="./index.html" class="mobile-menu__link link current">Cтудія</a></li>
                 <li class="mobile-menu__item"><a href="./portfolio.html" class="link"><span class="mobile-menu__text">Портфоліо</span></a></li>
                 <li class="mobile-menu__item"><a href="" class="link"><span class="mobile-menu__text">Контакти</span></a></li>
-            </ul>
-            </div>  
-            <div class="mobile-menu__address">    
-            <ul>
+            </ul>    
+            <ul class="mobile-menu__address">
                 <li><a class="site-address__link link" href="tel:+380961111111"><span class="mobile-menu__address-text">+38 096 111 11 11</span></a></li>
                 <li><a class="site-address__link link" href="mailto:info@devstudio.com"><span class="mobile-menu__mail">info@devstudio.com</span></a></li>
             </ul> 
-            </div>
-            </div>
-            <div>
             <ul class="mobile-menu__social-list">
                 <li class="mobile-menu__social-link"><a class="link" href="./"></a><span class="social-link__text">Instagram</span> </li>
                 <li class="mobile-menu__social-link"><a class="link" href="./"></a><span class="social-link__text">Twitter</span> </li>
@@ -280,6 +274,7 @@
                             <source srcset="./images/team4-mobile.webp 1x, ./images/team4-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
                             <source srcset="./images/team4-mobile.jpg 1x, ./images/team4-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
                         <img src="./images/team4-mobile.jpg" alt="дизайнер">
+                        </picture>
                     </div>
                     <h3 class="team-item">Михайло Єрмаков</h3>
                     <p class="paragraph-team" lang="en">UI Designer</p>
@@ -446,34 +441,36 @@
                 
                 <label class="text-form" for="name">
                 <span class="text-form-name">Ім'я</span> 
-                <div class="icon-container">
+                <span class="icon-container">
                 <input class="modal-input" type="text" name="name" id="name" required minlength="2" pattern="[a-zA-Za-яА-ЯїЇіІ]+">
                 <svg lang="en" aria-label="person icon" class="icon-position" width="18px" height="18px">
                     <use href="./images/sprite.svg#icon-person-black" class=""></use>
                 </svg>
-                </div>
+                </span>
                 </label>
                
                 <label class="text-form" for="tel">
                 <span class="text-form-name">Телефон</span>
-                <div class="icon-container">
+                <span class="icon-container">
                 <input class="modal-input" type="tel" name="tel" id="tel" required minlength="9" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
                 <svg lang="en" aria-label="person icon" class="icon-position" width="18px" height="18px">
-                <use href="./images/sprite.svg#icon-phone-black" class=""></use>
-                </div>
+                    <use href="./images/sprite.svg#icon-phone-black" class=""></use>
+                </svg>
+                </span>
                 </label>
 
                 <label class="text-form" for="mail">
                 <span class="text-form-name">Пошта</span>
-                <div class="icon-container">
+                <span class="icon-container">
                 <input class="modal-input" type="email" name="mail" id="mail" required>
                 <svg lang="en" aria-label="person icon" class="icon-position" width="18px" height="18px">
-                <use href="./images/sprite.svg#icon-email-black" class=""></use>
-                </div>
+                    <use href="./images/sprite.svg#icon-email-black" class=""></use>
+                </svg>
+                </span>
                 </label>
                 
                 <label class="text-form" for="text"><span class="text-form-name">Коментар</span>
-                <textarea class="contact-form-message" name="user-message" placeholder="Введіть текст"></textarea>
+                <textarea class="contact-form-message" name="user-message" id="text" placeholder="Введіть текст"></textarea>
                 </label>
                
                 <label class="registr-on-position">

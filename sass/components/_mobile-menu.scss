@@ -26,13 +26,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 480px;
+    height: 100vh;
+    padding-bottom: 48px;
 }
 .mobile-menu__item {
     margin-bottom: 32px;
 }
 
 .mobile-menu__nav {
-    margin-bottom: 270px;
+   flex-grow: 1;
 }
 
 .mobile-menu__address {

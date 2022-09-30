@@ -274,6 +274,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 480px;
+  height: 100vh;
+  padding-bottom: 48px;
 }
 
 .mobile-menu__item {
@@ -281,7 +284,7 @@ html {
 }
 
 .mobile-menu__nav {
-  margin-bottom: 270px;
+  flex-grow: 1;
 }
 
 .mobile-menu__address {
@@ -367,7 +370,6 @@ html {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -755,6 +757,9 @@ html {
 @media screen and (min-width: 768px) {
   .open-mobile-menu-btn {
     display: none;
+  }
+  .logo.head {
+    margin-right: 93px;
   }
 }
 .main-header {
@@ -1424,6 +1429,9 @@ html {
     align-items: baseline;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+  .footer__navigation {
+    text-align: center;
   }
   .footer-form {
     display: block;
